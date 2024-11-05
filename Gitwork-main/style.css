@@ -1,0 +1,250 @@
+/* Establece el fondo general de la página con un color oscuro */
+body {
+  background-color: rgb(63, 63, 63);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 70px; /* Da espacio en la parte superior */
+}
+
+/* Estilo de la barra de navegación con un fondo oscuro */
+.navbar {
+  background-color: #202225 !important; 
+}
+
+/* Colores para los enlaces y el botón del carrito en la barra de navegación */
+.navbar .navbar-brand,
+.navbar .btn-outline-light {
+  color: #ffffff !important;
+}
+
+/* Ajuste de color para los elementos en el carrito */
+#cartItems p {
+  color: black;
+}
+
+/* Estilo de la imagen del logo en la barra de navegación */
+.navbar-logo {
+  height: 40px; /* Define la altura del logo */
+  margin-right: 10px; /* Añade espacio a la derecha */
+}
+
+/* Estilos para las tarjetas de productos */
+.card {
+  background-color: #000000; /* Fondo negro para los cuadros */
+  color: rgb(255, 255, 255); /* Color de texto blanco */
+  transition: background-color 0.3s ease; /* Suaviza la transición al hacer hover */
+}
+
+/* Estilos de los botones de productos */
+.card .btn-light {
+  background-color: rgb(228, 228, 228);
+  color: black;
+}
+
+/* Efecto de escala en hover para las tarjetas */
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Centra el texto con sombras múltiples */
+.centrar {
+  text-align: center;
+  text-shadow: 
+      -2px -2px 0 #500303,        /* Sombra hacia la esquina superior izquierda */
+      2px -2px 0 #500303,         /* Sombra hacia la esquina superior derecha */
+      -2px  2px 0 #500303,        /* Sombra hacia la esquina inferior izquierda */
+      2px  2px 0 #500303; 
+}
+
+/* Diseño de rejilla para los productos */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas de tamaño igual */
+  gap: 20px; /* Espacio entre los productos */
+}
+
+/* Ajusta el ancho de las tarjetas para que ocupen el 100% de su contenedor */
+.card {
+  width: 100%;
+}
+
+/* Estilos responsivos para pantallas medianas */
+@media (max-width: 992px) {
+  .products-grid {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+  }
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .products-grid {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+}
+
+/* Estilo de contenido de las tarjetas, centrado verticalmente */
+.card-body {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Botón personalizado para agregar productos */
+.btn-agregar {
+  color: rgb(255, 255, 255);
+  background-color: #500303;
+  border-radius: 10px;
+  border-color: #500303;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover para el botón de agregar */
+.btn-agregar:hover {
+  background-color: #be0202;
+  border-color: #be0202;
+  transform: scale(1.05); /* Agranda el botón ligeramente */
+}
+
+/* Estilo para el texto dentro del modal */
+.modal-body p,
+.modal-body h5 {
+  color: rgb(255, 255, 255); /* Color de texto blanco en el modal */
+}
+
+/* Configura el fondo de la página con una imagen y opciones de ajuste */
+body {
+  background-image: url("Pics/Wallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 70px;
+  color: white; /* Texto en blanco para visibilidad sobre la imagen de fondo */
+}
+
+/* Colores del título del modal */
+#cartModalLabel, #checkoutModalLabel, #thankYouModalLabel {
+  color: rgb(255, 255, 255); /* Cambia el color del texto de los títulos de los modales */
+}
+
+/* Fondo personalizado para el contenido del modal */
+.custom-modal-bg {
+  background-color: #202225;
+  color: #ffffff;
+}
+
+/* Contenedor para los carruseles de imágenes */
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+/* Configura el tamaño del carrusel */
+.carousel {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Estilo de la imagen del carrusel */
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Estilo del pie de página */
+.footer {
+  background-color: #202225;
+  color: #ffffff;
+  font-size: 14px;
+  bottom: auto;
+}
+
+/* Contenido del pie de página */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Imagen del logo en el pie de página */
+.footer-logo-image {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Estilo del texto en el pie de página */
+.footer-text {
+  margin: 0;
+  color: rgb(200, 200, 200);
+  font-size: 16px;
+}
+
+/* Estilos de los iconos sociales en el pie de página */
+.footer-social {
+  margin: 10px 0;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #be0202;
+}
+
+/* Enlaces de contacto en el pie de página */
+.footer-contact a {
+  color: #be0202;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Separador y estilo de texto en la parte inferior del pie de página */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  font-size: 12px;
+  color: rgb(150, 150, 150);
+}
+
+/* Configura el fondo del contenido del modal */
+.modal-content {
+  background-color: #202225;
+  color: #ffffff;
+}
+
+/* Fondo del encabezado del modal */
+.modal-header {
+  background-color: #500303;
+  color: #ffffff;
+}
+
+/* Fondo del pie del modal */
+.modal-footer {
+  background-color: #202225;
+}
+
+/* Tamaño personalizado del modal */
+.custom-modal-size {
+  max-width: 800px;
+  width: 100%;
+}
